@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTELERIA VEGANA TATA</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar">
+        <div class="brand-title">Pasteleria Vegana</div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="productos.html">Productos</a></li>
+                <li>
+                    <a href="nosotros.html">Nosotros / Contacto</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+
+    <main id="contenedor-productos">
+
+    </main>
+
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito -ilustrativo</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
+
+
+    <script src="stock.js"></script>
+    <script src="modal.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
